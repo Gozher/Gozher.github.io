@@ -65,10 +65,12 @@ input[type=checkbox] {
 *******************************************/
 
 .landing {
+    /* border: 2px solid white; */
+
     height: 20rem;
     height: 50vh;
-    width: 80%;
-    margin-left: 5%;
+    width: 70%;
+    margin: 5% 0;
     display: flex;
     align-items: center;
 }
@@ -83,7 +85,7 @@ input[type=checkbox] {
 .title {
     color: white;
     font-size: 2rem;
-    width: 50%;
+    width: 90%;
     padding-left: 50px;
 }
 
@@ -105,13 +107,35 @@ input[type=checkbox] {
 }
 
 
-/* RESPONSIVE */
+/******************************************
+             RESPONSIVE 
+*******************************************/
+
+@media (max-width: 768px) {
+
+
+    .landing {
+        /* border: 2px solid white; */
+        width: 90%;
+        display: flex;
+        align-items: center;
+    }
+
+    .greeting {
+        color: white;
+        font-size: 1rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+}
+
 @media (max-width: 640px) {
 
 
-    /******************************************
-                    NAVBAR RESPONSIVE 
-    *******************************************/
+    /**********  NAVBAR RESPONSIVE  **********/
 
     .navbar {
 
@@ -142,24 +166,28 @@ input[type=checkbox] {
         display: block;
     }
 
-
+    /* seccion landing responsive */
     .landing {
-
+        /* border: 2px solid white; */
+        text-align: center;
         width: 100%;
         display: flex;
         align-items: center;
+        padding: 80px;
+
     }
 
     .greeting {
         color: white;
         font-size: 1rem;
         margin: 20px 0;
-
-
+        padding: 0;
     }
 
     .title {
+        width: 100%;
         font-size: 1.5rem;
+        padding: 0;
     }
 
 
