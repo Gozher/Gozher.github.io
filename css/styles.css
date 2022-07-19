@@ -8,8 +8,9 @@
 }
 
 body {
-
-    background-image: url('../img/earth.jpg');
+    background-color: black;
+    /* background-image: url('../img/back.jpg'); */
+    background-repeat: no-repeat;
 
 }
 
@@ -19,8 +20,8 @@ body {
 *******************************************/
 
 .navbar {
+    background-color: rgb(0, 0, 0, 0.45);
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     padding: 10px;
     color: #fff;
@@ -61,33 +62,109 @@ input[type=checkbox] {
 }
 
 /******************************************
-                landing
+                UTILIES
 *******************************************/
 
-.landing {
-    /* border: 2px solid white; */
-
-    height: 20rem;
-    height: 50vh;
-    width: 70%;
-    margin: 5% 0;
-    display: flex;
-    align-items: center;
+.text-center {
+    text-align: center;
 }
 
-.greeting {
+.border {
+    border: 2px solid white;
+}
+
+.radius {
+    border-radius: 10px;
+}
+
+.justify-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.items-center {
+    display: flex;
+    justify-content: center;
+}
+
+.bg-black {
+    background-color: rgb(0, 0, 0, 0.5)
+}
+
+.text-white {
     color: white;
+}
+
+.text-xl {
+    font-size: 2rem;
+}
+
+
+/******************************************
+                BANNER
+*******************************************/
+
+
+.content {
+    height: 100vh;
+    width: 100%;
+    margin: 1rem 0;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.banner {
+    text-align: center;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: px;
+}
+
+.bash {
+    border-right: 3px solid white;
     font-size: 1.5rem;
-    padding-left: 50px;
-    margin: 10px 0;
+    font-weight: bold;
+    width: 5%;
+    margin: auto 0;
+}
+
+.hello {
+
+    width: 95%;
+    padding: 8px 0;
 }
 
 .title {
-    color: white;
-    font-size: 2rem;
-    width: 90%;
-    padding-left: 50px;
+    font-size: 1rem;
+    padding: 0;
+    width: 100%;
+    margin: 0;
 }
+
+#leyend {
+    font-size: 2rem;
+    width: 80%;
+    margin: 0 auto;
+    padding: 4rem 0;
+
+
+}
+
+
+/******************************************
+                CONTACTO
+*******************************************/
+
+.form-contact {
+    display: flex;
+    flex-direction: column;
+}
+
 
 /******************************************
                 FOOTER 
@@ -97,9 +174,12 @@ input[type=checkbox] {
     color: white;
     font-weight: bold;
     text-align: center;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
+    height: 5%;
+    /* border: 2px solid white; */
+
 }
 
 .footer p {
@@ -111,26 +191,7 @@ input[type=checkbox] {
              RESPONSIVE 
 *******************************************/
 
-@media (max-width: 768px) {
-
-
-    .landing {
-        /* border: 2px solid white; */
-        width: 90%;
-        display: flex;
-        align-items: center;
-    }
-
-    .greeting {
-        color: white;
-        font-size: 1rem;
-    }
-
-    .title {
-        font-size: 2rem;
-    }
-
-}
+@media (max-width: 768px) {}
 
 @media (max-width: 640px) {
 
@@ -164,30 +225,6 @@ input[type=checkbox] {
 
     .responsive-menu {
         display: block;
-    }
-
-    /* seccion landing responsive */
-    .landing {
-        /* border: 2px solid white; */
-        text-align: center;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        padding: 80px;
-
-    }
-
-    .greeting {
-        color: white;
-        font-size: 1rem;
-        margin: 20px 0;
-        padding: 0;
-    }
-
-    .title {
-        width: 100%;
-        font-size: 1.5rem;
-        padding: 0;
     }
 
 
